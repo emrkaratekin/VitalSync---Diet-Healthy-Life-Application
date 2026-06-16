@@ -1,0 +1,106 @@
+/* Ana Sayfa Kutucuk Izgarası */
+.recipe-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.recipe-mini-card {
+  background: white;
+  border: 2px solid #F3F4F6;
+  border-radius: 20px;
+  padding: 15px;
+  cursor: pointer;
+  transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.recipe-mini-card:hover {
+  border-color: var(--primary);
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+}
+
+.recipe-mini-card h4 {
+  font-size: 0.95rem;
+  margin-bottom: 10px;
+  color: var(--text-main);
+  height: 40px;
+  /* İsimler hizalı dursun */
+  overflow: hidden;
+}
+
+.mini-stats {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-size: 0.8rem;
+  font-weight: 800;
+  color: var(--text-muted);
+}
+
+.recipe-mini-card small {
+  display: block;
+  margin-top: 10px;
+  color: var(--primary);
+  font-weight: 700;
+  font-size: 0.7rem;
+}
+
+/* Detay Modalı Özel Ayarları */
+.recipe-detail-content {
+  text-align: left;
+}
+
+.recipe-stats-row {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.stat-box {
+  background: #F3F4F6;
+  padding: 8px 12px;
+  border-radius: 12px;
+  font-weight: 800;
+  font-size: 0.85rem;
+}
+
+.ing-list {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  background: #F9FAFB;
+  padding: 15px;
+  border-radius: 16px;
+}
+
+.recipe-steps-text {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: #4B5563;
+  white-space: pre-line;
+}
+
+.scrollable-home {
+  height: 100%;
+  overflow-y: auto;
+  /* 5 tarif gelince aşağı kaydırabileceksin */
+  padding-bottom: 100px;
+  /* Navigasyona çarpmaması için boşluk */
+  scrollbar-width: none;
+}
+
+.scrollable-home::-webkit-scrollbar {
+  display: none;
+}
+
+/* Eksik malzemeler için vurgu (Videonun sonundaki istediğin kırmızı efekt) */
+.ing-item.missing {
+  color: #EF4444 !important;
+  font-weight: 800 !important;
+  background: #FEF2F2;
+  padding: 4px 8px;
+  border-radius: 8px;
+  display: block;
+  margin-top: 5px;
+}

@@ -1,0 +1,23 @@
+# Python
+venv/
+.venv/
+__pycache__/
+*.py[cod]
+
+# Environment / secrets
+.env
+.env.local
+
+# Databases (gerçek kullanıcı verisi repoya girmemeli)
+*.db
+*.sqlite
+*.sqlite3
+
+# Node / frontend
+node_modules/
+dist/
+build/
+
+# Editör / sistem
+.DS_Store
+*.log

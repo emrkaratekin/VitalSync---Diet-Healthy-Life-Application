@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">VitalSync</string>
+    <string name="title_activity_main">VitalSync</string>
+    <string name="package_name">com.emir.vitalsync</string>
+    <string name="custom_url_scheme">com.emir.vitalsync</string>
+</resources>
